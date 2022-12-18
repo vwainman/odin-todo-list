@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <!-- https://michalosman.github.io/todo-list/ -->
+    <!-- https://bscottnz.github.io/todo/ -->
+</head>
+
+<body>
+    <header>
+        <h1>ToDos</h1>
+    </header>
+    <main>
+        <div id="project-nav">
+            <h2>Projects</h2>
+            <div id="projects-list">
+                <button class="btn-project-item">
+                    <div class="project-item-title">
+                        Test
+                    </div>
+                    <i class="del-hover-color close fas fa-times" aria-hidden="true"></i>
+                </button>
+                <button class="btn-project-item">
+                    <div class="project-item-title">
+                        Test2
+                    </div>
+                    <i class="del-hover-color close fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <button class="dark-blue-hover" id="btn-add-project-item">
+                <i class="fas fa-plus" aria-hidden="true"></i> Add
+                Project
+            </button>
+        </div>
+
+        <div id="projects-grid">
+            <div class="card priority-high" id="project1">
+                <div class="top-left-card-actions">
+                </div>
+                <div class="top-right-card-actions">
+                    <a href="#popup-edit-proj"><i class="light-blue-hover fa fa-file-text" aria-hidden="true"></i></a>
+                    <i class="light-blue-hover close fa fa-minus"></i>
+                </div>
+                <h2>Test</h2>
+                <div class="task">
+                    <div class="task-left">
+                        <i class="fa fa-square-o"></i>
+                        <p class="task-title">Item 1</p>
+                    </div>
+                    <div class="task-right">
+                        <div class="task-date">Nov 19th</div>
+                        <i class="light-blue-hover fa fa-commenting" aria-hidden="true"></i>
+                        <i class="light-blue-hover fa fa-cog" aria-hidden="true"></i>
+                        <i class="rmv-item light-blue-hover fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-left">
+                        <i class="fa fa fa-check-square-o"></i>
+                        <p class="task-title">Item 2</p>
+                    </div>
+                </div>
+                <div class="bottom-right-card-actions">
+                    <i class="light-blue-hover fas fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card priority-medium" id="project2">
+                <div class="top-right-card-actions">
+                    <a href=""><i class="light-blue-hover fa fa-calendar" aria-hidden="true"></i></a>
+                    <i class="light-blue-hover close fa fa-minus"></i>
+                </div>
+                <h2>Test</h2>
+                <p>item1</p>
+                <p>item2</p>
+                <p>item3</p>
+                <div class="bottom-right-card-actions">
+                    <i class="light-blue-hover fas fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card priority-low" id="project3">
+                <div class="top-right-card-actions">
+                    <a href=""><i class="light-blue-hover fa fa-calendar" aria-hidden="true"></i></a>
+                    <a href="#popup-edit-proj"><i class="light-blue-hover fa fa-info-circle" aria-hidden="true"></i></a>
+                    <i class="light-blue-hover close fa fa-minus"></i>
+                </div>
+                <h2>Test</h2>
+                <p>item1</p>
+                <p>item2</p>
+                <p>item3</p>
+                <div class="bottom-right-card-actions">
+
+                    <i class="light-blue-hover fas fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card" id="project4">
+                <div class="top-right-card-actions">
+                    <a href=""><i class="light-blue-hover fa fa-calendar" aria-hidden="true"></i></a>
+                    <a href="#popup-edit-proj"><i class="light-blue-hover fa fa-info-circle" aria-hidden="true"></i></a>
+                    <i class="light-blue-hover close fa fa-minus"></i>
+                </div>
+                <h2>Test</h2>
+                <p>item1</p>
+                <p>item2</p>
+                <p>item3</p>
+                <div class="bottom-right-card-actions">
+                    <i class="light-blue-hover fas fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="popup-create-proj" class="overlay"> -->
+        <!-- <div class="popup-card"> -->
+        <!-- <form> -->
+        <!-- <i class="light-blue-hover close fa fa-times"></i> -->
+        <!-- <h2>Project Title</h2> -->
+        <!-- <input type="text" id="title" required> -->
+        <!-- <h3>Priority</h3> -->
+        <!-- <div class="popup-btn-group"> -->
+        <!-- <button type="button" class="priority-btn high">High</button> -->
+        <!-- <button type="button" class="priority-btn med">Medium</button> -->
+        <!-- <button type="button" class="priority-btn low">Low</button> -->
+        <!-- </div> -->
+        <!-- <h3>Description</h3> -->
+        <!-- <textarea class="popup-text"></textarea> -->
+        <!-- <h3> -->
+        <!-- <label for="start-date">Start</label> -->
+        <!-- </h3> -->
+        <!-- <input type="datetime-local" id="start-date" name="start-date" min="2018-06-07T00:00" -->
+        <!-- max="018-06-14T00:00"> -->
+        <!-- <h3><label for="due-date">End</label></h3> -->
+        <!-- <input type="datetime-local" id="due-date" name="due-date" min="2018-06-07T00:00" -->
+        <!-- max="018-06-14T00:00"> -->
+        <!-- <div class="popup-btn-group" id="confirm-reset-grp"> -->
+        <!-- <button type="submit">Confirm</button> -->
+        <!-- <button type="reset">Reset</button> -->
+        <!-- </div> -->
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- </div> -->
+
+
+        <!-- <div id="popup-edit-proj" class="overlay"> -->
+        <!-- <div class="popup-card"> -->
+        <!-- <form> -->
+        <!-- <i class="light-blue-hover close fa fa-times"></i> -->
+        <!-- <h2><label for="proj-title">Project Title</label></h2> -->
+        <!-- <input type="text" id="title"> -->
+        <!-- <h3>Priority</h3> -->
+        <!-- <div class="popup-btn-group"> -->
+        <!-- <button class="priority-btn high" value="">High</button> -->
+        <!-- <button class="priority-btn med">Medium</button> -->
+        <!-- <button class="priority-btn low">Low</button> -->
+        <!-- </div> -->
+        <!-- <h3>Description</h3> -->
+        <!-- <textarea class="popup-text">This todo list is for this todo list project!</textarea> -->
+        <!-- <h3> -->
+        <!-- <label for="start-date">Start</label> -->
+        <!-- </h3> -->
+        <!-- <input type="datetime-local" id="start-date" name="start-date" min="2018-06-07T00:00" -->
+        <!-- max="018-06-14T00:00"> -->
+        <!-- <h3><label for="due-date">End</label></h3> -->
+        <!-- <input type="datetime-local" id="due-date" name="due-date" min="2018-06-07T00:00" -->
+        <!-- max="018-06-14T00:00"> -->
+        <!-- <div class="popup-btn-group" id="confirm-reset-grp"> -->
+        <!-- <button type="submit">Confirm</button> -->
+        <!-- <button type="reset">Reset</button> -->
+        <!-- </div> -->
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- </div> -->
+
+    </main>
+    <footer>
+        <a href="https://github.com/vwainman" target="_blank">
+            <i class="light-blue-hover fab fa-github"></i></a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
